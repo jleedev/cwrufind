@@ -116,7 +116,7 @@ $title = array(
 	"because it's good to have friends who don't know they're friends",
 	"because information should be free",
 	"oh god, the SASL, it burns!",
-	"...title? Titles are for books. This is the INTERNET! (who reads books, anyway?)"
+	"...title? Titles are for books. This is the INTERNET! (who reads books, anyway?)",
 	"PAM cooking spray, now with LDAP!",
 );
 $learn = array("learn","grok","dig up","excavate","inspect","collect");
