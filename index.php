@@ -69,14 +69,17 @@ foreach($filter as $key => $value) {
 }
 $request .= "\"";
 $request2 .= "\"";
-foreach($ldaptotag as $tag => $foobar) {
+/*foreach($ldaptotag as $tag => $foobar) {
 	$request .= " $tag";
 	$request2 .= " $tag";
-}
+}*/
 if(count($filter) > 0) {
 	exec("ldapsearch -h ldap.case.edu -xLLLb ou=People,o=cwru.edu,o=isp \"$request",$results,$b);
 	if(multi) exec("ldapsearch -h ldap.case.edu -xLLLb ou=People,o=cwru.edu,o=isp \"$request2",$results2,$b);
 }
+/*print("<pre>");
+print($request);
+print("</pre>");*/
 
 $submit = array(
 	"EXPAND YOUR MIND",
@@ -200,7 +203,7 @@ echo "\t\tTo $learn some $shit $about some Case $dudeordudette, put some $stuff 
 					<td>
 						UNIX Shell
 					</td><td width="15" /><td>
-						<input name="shell" type="text" <?php if(isset($_GET['shel'])) print "value=\"{$_GET['shell']}\" "; ?>/>
+						<input name="shell" type="text" <?php if(isset($_GET['shell'])) print "value=\"{$_GET['shell']}\" "; ?>/>
 					</td>
 				</tr><tr>
 					<td>
