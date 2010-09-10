@@ -148,6 +148,7 @@ $submit = $submit[rand(0,count($submit)-1)];
 	<title>CWRU FIND - <?php
 echo $title;
 ?></title>
+<meta name="viewport" content="user-scalable=no;width=device-width" />
 </head><body>
 	<center>
 <?php
